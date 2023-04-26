@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to left, #f00, #00f);
+
+}
+
+#piano {
+    /* height: 290px;     */
+    height: 20rem;    
+    padding: 90px 30px 0 30px;
+    width: 50rem;
+    /* background-color: #fc8989; */
+    background: linear-gradient(to right, #f00, #00f);
+    border-radius: 10px; 
+}
+
+.keys {
+    height: 108%;
+    position: relative;
+    transition: all 0.3s;
+}
+/* 
+.key{
+    transform-origin: top;
+} */
+
+.black-keys {
+    position: relative;
+    display: flex;
+    z-index: 5;
+    width: 100%;
+}
+
+.black-key {
+    background-color: #000;
+    /* width: 38px; */
+    width: 5%;
+    height: 130px;
+    border-radius: 0 0 5px 5px;
+    position:absolute;
+    z-index: 5;
+    background: linear-gradient(44deg, #000, #333, #000);
+
+}
+
+.black-key:nth-child(1) {
+    /* left: 50px; */
+    left: 4.75%;
+}
+
+.black-key:nth-child(2) {
+    /* left: 117px; */
+    left: 12%;
+}
+
+.black-key:nth-child(3) {
+    /* left: 253px; */
+    left: 26%;
+}
+.black-key:nth-child(4) {
+    /* left: 323px; */
+    left: 33.5%;
+}
+.black-key:nth-child(5) {
+    /* left: 392px; */
+    left: 40.5%;
+}
+.black-key:nth-child(6) {
+    /* left: 527px; */
+    left: 54.5%;
+}
+.black-key:nth-child(7) {
+    /* left: 593px; */
+    left: 62%;
+}
+.black-key:nth-child(8) {
+    /* left: 663px; */
+    left: 69%;
+}
+.black-key:nth-child(9) {
+    /* left: 797px; */
+    left: 83.5%;
+}
+.black-key:nth-child(10) {
+    /* left: 867px; */
+    left: 90.5%;
+}
+
+
+.white-keys {
+    display: flex;
+    height: 100%;
+}
+
+.white-key {
+    /* width: 68px; */
+    width: 7.15%;
+    height: 85%;
+    background-color: #fff;
+    border: 2px solid  black;
+    border-radius: 0 0 5px 5px;
+
+} 
+
+
+.key:active,
+.played{
+    /* opacity: 0.75; */
+    transform: scale(0.95) translateY(-5px);
+}
